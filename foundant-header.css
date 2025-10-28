@@ -11,10 +11,9 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', monospace;
+       /* overflow-x: hidden; */
 }
-.abundance-header {
-    overflow-x: hidden;
-}
+
 .abundance-header .site-header {
     width: 100%;
 }
@@ -55,6 +54,7 @@
     z-index: 999;
     display: none;
     align-items: flex-start;
+    padding: 5px;
 }
 
 .abundance-header .dropdown {
