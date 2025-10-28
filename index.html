@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Header preview</title>
+  <link rel="stylesheet" href="foundant-header.css" />
+</head>
+<body>
+  <div id="preview">Loading header…</div>
+
+  <script>
+    // Load the header fragment and inject it into the page
+    fetch('foundant-header.html')
+      .then(r => r.ok ? r.text() : Promise.reject(r.statusText))
+      .then(html => {
+        document.getElementById('preview').innerHTML = html;
+      })
+      .catch(err => {
+        document.getElementById('preview').textContent =
+          'Could not load foundant-header.html — run a local server. ' + err;
+      });
+  </script>
+</body>
+</html>

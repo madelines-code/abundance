@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/* Basic CSS to style the header similarly */
+
+
+
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+}
+html, body {
+    overflow-x: hidden;
+}
+.site-header {
+    width: 100%;
+}
+.site-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    background: white;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 0px 15px;
+    color: hsla(231.43,29.17%,18.82%,1);
+    text-decoration: none;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 300
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 200px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    align-items: flex-start;
+}
+
+.dropdown {
+    padding-bottom: 10px;
+}
+
+ul li a:hover {
+    background: white;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.site-logo {
+    max-height: 83px;
+    padding: 20px 40px;
+}
+
+.header-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start; /* keep logo + nav together */
+    background: #fff;
+}
+
+.icon {
+    border: 1px solid hsla(231.43,29.17%,18.82%,1);
+    border-radius: 7px;
+    padding: 10px 10px 5px 10px;
+    color: hsla(231.43,29.17%,18.82%,1);
+}
+.icon:hover{
+    border: 1px solid hsl(232, 24%, 71%);
+    background-color: hsl(232, 24%, 71%);
+    border-radius: 7px;
+    color: white;
+}
+/* .icon:hover svg path {
+  stroke: white;
+  fill: white;
+} */
+
+.hub {
+     background-color: hsl(232, 24%, 71%);
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hub:hover {
+    background-color: hsla(232, 24%, 71%,0.9);
+    color: white;
+    cursor: pointer;
+}
+
+.header-right {
+    margin-left: auto; /* ✅ This is the key */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+.angel-button {
+    padding-left: 20px;
+}
