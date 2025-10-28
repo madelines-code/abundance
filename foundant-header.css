@@ -7,34 +7,34 @@
 
   
 
-* {
+.abundance-header {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', monospace;
 }
-html, body {
+.abundance-header {
     overflow-x: hidden;
 }
-.site-header {
+.abundance-header .site-header {
     width: 100%;
 }
-.site-nav {
+.abundance-header .site-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-ul {
+.abundance-header ul {
     list-style: none;
     background: white;
 }
 
-ul li {
+.abundance-header ul li {
     display: inline-block;
     position: relative;
 }
 
-ul li a {
+.abundance-header ul li a {
     display: block;
     padding: 0px 15px;
     color: hsla(231.43,29.17%,18.82%,1);
@@ -44,11 +44,11 @@ ul li a {
     font-weight: 300
 }
 
-ul li ul.dropdown li {
+.abundance-header ul li ul.dropdown li {
     display: block;
 }
 
-ul li ul.dropdown {
+.abundance-header ul li ul.dropdown {
     width: 200px;
     background: white;
     position: absolute;
@@ -57,24 +57,24 @@ ul li ul.dropdown {
     align-items: flex-start;
 }
 
-.dropdown {
+.abundance-header .dropdown {
     padding-bottom: 10px;
 }
 
-ul li a:hover {
+.abundance-header ul li a:hover {
     background: white;
 }
 
-ul li:hover ul.dropdown {
+.abundance-header ul li:hover ul.dropdown {
     display: block;
 }
 
-.site-logo {
+.abundance-header .site-logo {
     max-height: 83px;
     padding: 20px 40px;
 }
 
-.header-inner {
+.abundance-header .header-inner {
     display: flex;
     width: 100%;
     align-items: center;
@@ -82,13 +82,13 @@ ul li:hover ul.dropdown {
     background: #fff;
 }
 
-.icon {
+.abundance-header .icon {
     border: 1px solid hsla(231.43,29.17%,18.82%,1);
     border-radius: 7px;
     padding: 10px 10px 5px 10px;
     color: hsla(231.43,29.17%,18.82%,1);
 }
-.icon:hover{
+.abundance-header .icon:hover{
     border: 1px solid hsl(232, 24%, 71%);
     background-color: hsl(232, 24%, 71%);
     border-radius: 7px;
@@ -99,7 +99,7 @@ ul li:hover ul.dropdown {
   fill: white;
 } */
 
-.hub {
+.abundance-header .hub {
      background-color: hsl(232, 24%, 71%);
     color: white;
     padding: 17px;
@@ -107,13 +107,13 @@ ul li:hover ul.dropdown {
     border-radius: 5px;
 }
 
-.hub:hover {
+.abundance-header .hub:hover {
     background-color: hsla(232, 24%, 71%,0.9);
     color: white;
     cursor: pointer;
 }
 
-.header-right {
+.abundance-header .header-right {
     margin-left: auto; /* ✅ This is the key */
     display: flex;
     align-items: center;
@@ -122,6 +122,6 @@ ul li:hover ul.dropdown {
     padding-right: 40px;
 }
 
-.angel-button {
+.abundance-header .angel-button {
     padding-left: 20px;
 }
