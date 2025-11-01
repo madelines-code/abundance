@@ -1,13 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/* 
-=========================
-  SAFE SCOPED HEADER CSS
-=========================
-*/
 
-.abundance-header * {
-  all: revert-layer; /* prevents global resets */
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+/* Basic CSS to style the header similarly */
+
+
+
+  
+
+.abundance-header {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+       /* overflow-x: hidden; */
+}
+
+.abundance-header .site-header {
+    width: 100%;
+}
+.abundance-header .site-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.abundance-header ul {
+    list-style: none;
+    background: white;
+}
+
+.abundance-header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.abundance-header ul li a {
+    display: block;
+    padding: 0px 15px;
+    color: hsla(231.43,29.17%,18.82%,1);
+    text-decoration: none;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 300
+}
+
+.abundance-header ul li ul.dropdown li {
+    display: block;
+}
+
+.abundance-header ul li ul.dropdown {
+    width: 200px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.abundance-header .dropdown {
+    padding-bottom: 10px;
+}
+
+.abundance-header ul li a:hover {
+    background: white;
+}
+
+.abundance-header ul li:hover ul.dropdown {
+    display: block;
+}
+
+.abundance-header .site-logo {
+    max-height: 83px;
+    padding: 20px 40px;
+}
+
+.abundance-header .header-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start; /* keep logo + nav together */
+    background: #fff;
+}
+
+.abundance-header .icon {
+    border: 1px solid hsla(231.43,29.17%,18.82%,1);
+    border-radius: 7px;
+    padding: 10px 10px 5px 10px;
+    color: hsla(231.43,29.17%,18.82%,1);
+}
+.abundance-header .icon:hover{
+    border: 1px solid hsl(232, 24%, 71%);
+    background-color: hsl(232, 24%, 71%);
+    border-radius: 7px;
+    color: white;
+}
+/* .icon:hover svg path {
+  stroke: white;
+  fill: white;
+} */
+
+.abundance-header .hub {
+     background-color: hsl(232, 24%, 71%);
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.abundance-header .hub:hover {
+    background-color: hsla(232, 24%, 71%,0.9);
+    color: white;
+    cursor: pointer;
+}
+
+.abundance-header .header-right {
+    margin-left: auto; /* ✅ This is the key */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+.abundance-header .angel-button {
+    padding-left: 20px;
 }
