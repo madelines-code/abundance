@@ -1,127 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+/* 
+=========================
+  SAFE SCOPED HEADER CSS
+=========================
+*/
 
-/* Basic CSS to style the header similarly */
-
-
-
-  
+.abundance-header * {
+  all: revert-layer; /* prevents global resets */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 .abundance-header {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', monospace;
-       /* overflow-x: hidden; */
+  all: initial; /* isolate from Foundant */
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 .abundance-header .site-header {
-    width: 100%;
-}
-.abundance-header .site-nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.abundance-header ul {
-    list-style: none;
-    background: white;
-}
-
-.abundance-header ul li {
-    display: inline-block;
-    position: relative;
-}
-
-.abundance-header ul li a {
-    display: block;
-    padding: 0px 15px;
-    color: hsla(231.43,29.17%,18.82%,1);
-    text-decoration: none;
-    text-align: start;
-    font-size: 14px;
-    font-weight: 300
-}
-
-.abundance-header ul li ul.dropdown li {
-    display: block;
-}
-
-.abundance-header ul li ul.dropdown {
-    width: 200px;
-    background: white;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    align-items: flex-start;
-    padding: 5px;
-}
-
-.abundance-header .dropdown {
-    padding-bottom: 10px;
-}
-
-.abundance-header ul li a:hover {
-    background: white;
-}
-
-.abundance-header ul li:hover ul.dropdown {
-    display: block;
-}
-
-.abundance-header .site-logo {
-    max-height: 83px;
-    padding: 20px 40px;
+  all: unset;
+  display: block;
+  width: 100%;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .abundance-header .header-inner {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start; /* keep logo + nav together */
-    background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.abundance-header .site-logo {
+  max-height: 83px;
+  height: 83px;
+  /* padding: 20px 40px; */
+}
+
+.abundance-header .site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.abundance-header .site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.abundance-header .site-nav li {
+  display: inline-block;
+  position: relative;
+}
+
+.abundance-header .site-nav a {
+  display: block;
+  padding: 0px 15px;
+  color: hsla(231.43,29.17%,18.82%,1);
+  text-decoration: none;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.abundance-header .site-nav li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background: white;
+  z-index: 999;
+  padding: 5px;
+}
+
+.abundance-header .site-nav li:hover ul.dropdown {
+  display: block;
+}
+
+.abundance-header .dropdown li {
+  display: block;
+  padding-bottom: 10px;
 }
 
 .abundance-header .icon {
-    border: 1px solid hsla(231.43,29.17%,18.82%,1);
-    border-radius: 7px;
-    padding: 10px 10px 5px 10px;
-    color: hsla(231.43,29.17%,18.82%,1);
+  border: 1px solid hsla(231.43,29.17%,18.82%,1);
+  border-radius: 7px;
+  padding: 10px 10px 5px 10px;
+  color: hsla(231.43,29.17%,18.82%,1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.abundance-header .icon:hover{
-    border: 1px solid hsl(232, 24%, 71%);
-    background-color: hsl(232, 24%, 71%);
-    border-radius: 7px;
-    color: white;
+
+.abundance-header .icon:hover {
+  border: 1px solid hsl(232, 24%, 71%);
+  background-color: hsl(232, 24%, 71%);
+  color: white;
 }
-/* .icon:hover svg path {
-  stroke: white;
-  fill: white;
-} */
 
 .abundance-header .hub {
-     background-color: hsl(232, 24%, 71%);
-    color: white;
-    padding: 17px;
-    border: none;
-    border-radius: 5px;
+  background-color: hsl(232, 24%, 71%);
+  color: white;
+  padding: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }
 
 .abundance-header .hub:hover {
-    background-color: hsla(232, 24%, 71%,0.9);
-    color: white;
-    cursor: pointer;
+  background-color: hsla(232, 24%, 71%, 0.9);
 }
 
 .abundance-header .header-right {
-    margin-left: auto; /* ✅ This is the key */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    padding-right: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 40px;
 }
 
 .abundance-header .angel-button {
-    padding-left: 20px;
+  padding-left: 20px;
 }
